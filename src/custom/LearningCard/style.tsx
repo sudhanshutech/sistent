@@ -1,5 +1,5 @@
 import { styled } from '@mui/material/styles';
-import { BLACK, ONYX_BLACK, SILVER_GRAY, WHITE } from '../../theme';
+import { ONYX_BLACK, SILVER_GRAY } from '../../theme';
 
 const CardWrapper = styled('div')({
   maxWidth: '28rem',
@@ -14,7 +14,7 @@ const CardActive = styled('div')(({ theme }) => ({
   '&:hover': {
     boxShadow: 'rgba(0, 179, 158, 0.9) 0px 0px 19px 6px'
   },
-  backgroundColor: theme.palette.mode === 'light' ? WHITE : BLACK
+  backgroundColor: theme.palette.background.default
 }));
 
 const CardLink = styled('a')({
