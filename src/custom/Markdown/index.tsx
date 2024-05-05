@@ -16,7 +16,7 @@ const RenderMarkdown: React.FC<RenderMarkdownProps> = ({ content }) => {
   }, [content]);
 
   useEffect(() => {
-    // convert markdown to html (also sanitizes the html)
+    // convert markdown to html
     convertMarkdownToHtml();
   }, [content, convertMarkdownToHtml]);
 
